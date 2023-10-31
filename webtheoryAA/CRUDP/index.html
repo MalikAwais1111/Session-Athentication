@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert user record</title>
+    <style>
+        .div_margin{
+            margin-top: 10px;
+        }
+
+        /* Add styles for labels and inputs */
+        label {
+            display: block;
+            
+        }
+
+        input {
+            display: block;
+            width: 250px;
+            padding: 3px;
+            margin-top: 5px;
+            transition: box-shadow 0.5s;
+            box-shadow: 10px 10px 10px rgb(110, 212, 110);
+        }
+        input:hover{
+            box-shadow: 15px 15px 15px rgb(110, 212, 110);
+        }
+
+        /* Style for the container */
+        .container {
+            border: 2px solid black;
+            width: 300px; /* Adjust the width as needed */
+            /*margin: 0 auto;  Center the container horizontally */
+            padding: 10px;
+            float: left;
+            margin-left: 30px;
+            margin-bottom: 20px;
+            background-color: rgb(213, 228, 213);
+            transition: box-shadow 0.5s;
+            box-shadow: 10px 10px 10px rgb(110, 212, 110);
+           
+        }
+        .container:hover{
+            box-shadow: 15px 15px 15px rgb(110, 212, 110);
+        }
+        h1 {
+            text-align: center;
+        }
+        .desi{
+            background-color: black;
+            color: white;
+        }
+        .desi:hover{
+            opacity: 0.8;
+        }
+        
+        .desi:active{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Products Form</h1>
+        <hr>
+        <form method="post" action="insertP.php" enctype="multipart/form-data">
+            >
+            <div class="div_margin">
+                <label for="pname">Product Name:</label>
+                <input type="text" name="pname" id="pname">
+            </div>
+            <div class="div_margin">
+                <label for="pid">Product ID:</label>
+                <input type="number" name="pid" id="pid">
+            </div>
+            <div class="div_margin">
+                <label for="pcetagory">Category:</label>
+                <input type="text" name="pcategory" id="pcategory">
+            </div>
+            <div class="div_margin">
+                <label for="pprice">Price:</label>
+                <input type="number" name="pprice" id="pprice">
+            </div>
+            <div class="div_margin">
+                <label for="pmaterial">Material:</label>
+                <input type="text" name="pmaterial" id="pmaterial">
+            </div>
+            <div class="div_margin">
+                <label for="pweight">Weight:</label>
+                <input type="number" name="pweight" id="pweight">
+            </div>
+            <div class="div_margin">
+                <label for="pcolor">Color:</label>
+                <input type="text" name="pcolor" id="pcolor">
+            </div>
+            <div class="div_margin">
+                <label for="pratings">Ratings:</label>
+                <input type="decimal" name="pratings" id="pratings">
+            </div>
+            <div class="div-margin">
+                <label for="picture">Please upload your image:</label>
+                <input type="file" id="picture" name="picture" required>
+            </div>
+            <div class="div_margin">
+                <input class="desi" type="submit" name="submit" id="submit" value="Save">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

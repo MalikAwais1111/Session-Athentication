@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./Rcss.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="heading">
+            <h1>Admin Register</h1>
+        </div>
+        <form action="./insertA.php" method="post">
+        <div class="Uinputs">
+            <label for="Uname">UserName</label>
+            <input type="text" name="Uname" id="Uname">
+            <label for="Upassword">Password</label>
+            <input type="password" name="Upassword" id="Upassword">
+            <input class="sub" type="submit" name="Usubmit" id="Usubmit" value="Register">
+        </div>
+    </form>
+        <div>
+            <p style="margin-left: 35px;" >Already have an account?</p>
+            <a style="margin-left: 95px;" href="./index.html">Login</a>
+        </div>
+    </div>
+</body>
+</html>

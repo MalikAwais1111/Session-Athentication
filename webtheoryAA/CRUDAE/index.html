@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert user record</title>
+    <style>
+        .div_margin{
+            margin-top: 10px;
+        }
+
+        /* Add styles for labels and inputs */
+        label {
+            display: block;
+            
+        }
+
+        input {
+            display: block;
+            width: 250px;
+            padding: 3px;
+            margin-top: 5px;
+            transition: box-shadow 0.5s;
+            box-shadow: 10px 10px 10px rgb(110, 212, 110);
+        }
+        input:hover{
+            box-shadow: 15px 15px 15px rgb(110, 212, 110);
+        }
+
+        /* Style for the container */
+        .container {
+            border: 2px solid black;
+            width: 300px; /* Adjust the width as needed */
+            /*margin: 0 auto;  Center the container horizontally */
+            padding: 10px;
+            float: left;
+            margin-left: 30px;
+            background-color: rgb(213, 228, 213);
+            transition: box-shadow 0.5s;
+            box-shadow: 10px 10px 10px rgb(110, 212, 110);
+           
+        }
+        .container:hover{
+            box-shadow: 15px 15px 15px rgb(110, 212, 110);
+        }
+        h1 {
+            text-align: center;
+        }
+        .desi{
+            background-color: black;
+            color: white;
+        }
+        .desi:hover{
+            opacity: 0.8;
+        }
+        
+        .desi:active{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <h1>Employee Form</h1>
+            <hr>
+            <form action="./insertE.php" method="post">
+                <div class="div_margin">
+                    <label for="ename">Name:</label>
+                    <input type="text" name="ename" id="ename">
+                </div>
+                <div class="div_margin">
+                    <label for="eid">Employee ID:</label>
+                    <input type="number" name="eid" id="eid">
+                </div>
+                <div class="div_margin">
+                    <label for="ecnic">CNIC No:</label>
+                    <input type="number" name="ecnic" id="ecnic">
+                </div>
+                <div class="div_margin">
+                    <label for="eemail">Email:</label>
+                    <input type="email" name="eemail" id="eemail">
+                </div>
+                <div class="div_margin">
+                    <label for="ephone">Phone No:</label>
+                    <input type="tel" name="ephone" id="ephone">
+                </div>
+                <div class="div_margin">
+                    <label for="eaddress">Address:</label>
+                    <input type="text" name="eaddress" id="eaddress">
+                </div>
+                <div class="div_margin">
+                    <label for="estatus">Employee Status:</label>
+                    <input placeholder="Part-time/Full-time" type="text" name="estatus" id="estatus">
+                </div>
+                <div class="div_margin">
+                    <label for="ework_location">Work loccation:</label>
+                    <input type="text" name="ework_location" id="ework_location">
+                </div>
+                
+                <div class="div_margin">
+                    <input class="desi" type="submit" name="submit" id="submit" value="Save">
+                </div>
+                
+            </form>
+        </div>
+</body>
+</html>
