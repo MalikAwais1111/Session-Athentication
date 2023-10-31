@@ -2,12 +2,14 @@
     session_start();
     if(!isset($_SESSION['ID'])){
        // header("Location: ./checka.php");
-       echo '<br><a href="./Slogout.php">Logout</a>';
+       echo '<br><a href="./index.html">Sign-up</a>';
        echo '<br>';
     }
 //header("Location: CRUDA/Select.php");
-    echo '<br><a href="./index.html">Sign-up</a>';
-    echo '<br>';
+//    else {
+//     echo '<br><a href="./Slogout.php">Logout</a>';
+//     echo '<br>';
+//    }
 ?>
 	<!DOCTYPE html>
 <html lang="en">
