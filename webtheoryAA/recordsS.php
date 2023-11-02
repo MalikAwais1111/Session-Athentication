@@ -6,10 +6,10 @@
        echo '<br>';
     }
 //header("Location: CRUDA/Select.php");
-//    else {
-//     echo '<br><a href="./Slogout.php">Logout</a>';
-//     echo '<br>';
-//    }
+   else {
+    echo '<br><a href="./Slogout.php">Logout</a>';
+    echo '<br>';
+   }
 ?>
 	<!DOCTYPE html>
 <html lang="en">
